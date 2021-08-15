@@ -1,0 +1,10 @@
+x=str(input("enter the word : "))
+def freq(f):
+    d=dict()
+    for key in f:
+        if key not in d:
+            d[key]=1
+        else:
+            d[key]+=1
+    return d
+print(freq(x))
